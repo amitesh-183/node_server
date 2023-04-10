@@ -6,12 +6,12 @@ const fs = require("fs");
 
 const PORT = process.env.PORT;
 
-const home = fs.readFileSync("index.html", "utf8");
-const about = fs.readFileSync("about.html", "utf8");
-const gallery = fs.readFileSync("gallery.html", "utf8");
-const project = fs.readFileSync("project.html", "utf8");
-const contact = fs.readFileSync("contact.html", "utf8");
-const error = fs.readFileSync("error.html", "utf8");
+const home = fs.readFileSync("./index.html", "utf8");
+const about = fs.readFileSync("./about.html", "utf8");
+const gallery = fs.readFileSync("./gallery.html", "utf8");
+const project = fs.readFileSync("./project.html", "utf8");
+const contact = fs.readFileSync("./contact.html", "utf8");
+const error = fs.readFileSync("./error.html", "utf8");
 
 const server = http.createServer((req, res) => {
   //   res.end("Hello");

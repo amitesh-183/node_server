@@ -18,13 +18,17 @@ const server = http.createServer((req, res) => {
   //   console.log(req.url);
   if (req.url === "/") {
     return res.end(home);
-  } else if (req.url === "/about") {
+  }
+  if (req.url === "/about") {
     return res.end(about);
-  } else if (req.url === "/contact") {
+  }
+  if (req.url === "/contact") {
     return res.end(contact);
-  } else if (req.url === "/project") {
+  }
+  if (req.url === "/project") {
     return res.end(project);
-  } else if (req.url === "/gallery") {
+  }
+  if (req.url === "/gallery") {
     return res.end(gallery);
   } else {
     return res.end(error);
